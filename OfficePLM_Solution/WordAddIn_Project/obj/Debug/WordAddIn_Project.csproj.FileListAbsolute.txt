@@ -1,0 +1,13 @@
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\bin\Debug\WordAddIn_Project.dll
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\bin\Debug\WordAddIn_Project.pdb
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\bin\Debug\WordAddIn_Project.dll.manifest
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\bin\Debug\WordAddIn_Project.vsto
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.csprojAssemblyReference.cache
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.Properties.Resources.resources
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.WordAddinPLM_Ribbon.resources
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.csproj.GenerateResource.cache
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.csproj.CoreCompileInputs.cache
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.csproj.CopyComplete
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.dll
+C:\GitHubCatiaWidgets\OfficePLM\OfficePLM_Solution\WordAddIn_Project\obj\Debug\WordAddIn_Project.pdb
