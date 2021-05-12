@@ -36,8 +36,12 @@ namespace WordAddIn_Project
         private void InitializeComponent()
         {
             this.tab1 = this.Factory.CreateRibbonTab();
-            this.PLM = this.Factory.CreateRibbonGroup();
+            this.Grp_PLM = this.Factory.CreateRibbonGroup();
             this.menu1 = this.Factory.CreateRibbonMenu();
+            this.menu4 = this.Factory.CreateRibbonMenu();
+            this.Btn_Register = this.Factory.CreateRibbonButton();
+            this.Btn_Login = this.Factory.CreateRibbonButton();
+            this.Btn_LogOut = this.Factory.CreateRibbonButton();
             this.Btn_NewDocument = this.Factory.CreateRibbonButton();
             this.menu2 = this.Factory.CreateRibbonMenu();
             this.Btn_CheckIn = this.Factory.CreateRibbonButton();
@@ -50,24 +54,25 @@ namespace WordAddIn_Project
             this.Btn_SaveDocument = this.Factory.CreateRibbonButton();
             this.Btn_CloseDocument = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
-            this.PLM.SuspendLayout();
+            this.Grp_PLM.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
             // 
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.tab1.Groups.Add(this.PLM);
+            this.tab1.Groups.Add(this.Grp_PLM);
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
-            // PLM
+            // Grp_PLM
             // 
-            this.PLM.Items.Add(this.menu1);
-            this.PLM.Label = "group1";
-            this.PLM.Name = "PLM";
+            this.Grp_PLM.Items.Add(this.menu1);
+            this.Grp_PLM.Label = "PLM";
+            this.Grp_PLM.Name = "Grp_PLM";
             // 
             // menu1
             // 
+            this.menu1.Items.Add(this.menu4);
             this.menu1.Items.Add(this.Btn_NewDocument);
             this.menu1.Items.Add(this.menu2);
             this.menu1.Items.Add(this.menu3);
@@ -75,6 +80,37 @@ namespace WordAddIn_Project
             this.menu1.Items.Add(this.Btn_CloseDocument);
             this.menu1.Label = "PLM Lifecycle";
             this.menu1.Name = "menu1";
+            // 
+            // menu4
+            // 
+            this.menu4.Image = global::WordAddIn_Project.Properties.Resources.User;
+            this.menu4.Items.Add(this.Btn_Register);
+            this.menu4.Items.Add(this.Btn_Login);
+            this.menu4.Items.Add(this.Btn_LogOut);
+            this.menu4.Label = "User";
+            this.menu4.Name = "menu4";
+            this.menu4.ShowImage = true;
+            // 
+            // Btn_Register
+            // 
+            this.Btn_Register.Image = global::WordAddIn_Project.Properties.Resources.Register;
+            this.Btn_Register.Label = "Register";
+            this.Btn_Register.Name = "Btn_Register";
+            this.Btn_Register.ShowImage = true;
+            // 
+            // Btn_Login
+            // 
+            this.Btn_Login.Image = global::WordAddIn_Project.Properties.Resources.Login;
+            this.Btn_Login.Label = "Log In";
+            this.Btn_Login.Name = "Btn_Login";
+            this.Btn_Login.ShowImage = true;
+            // 
+            // Btn_LogOut
+            // 
+            this.Btn_LogOut.Image = global::WordAddIn_Project.Properties.Resources.LogOut;
+            this.Btn_LogOut.Label = "Log Out";
+            this.Btn_LogOut.Name = "Btn_LogOut";
+            this.Btn_LogOut.ShowImage = true;
             // 
             // Btn_NewDocument
             // 
@@ -185,8 +221,8 @@ namespace WordAddIn_Project
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.WordAddinPLM_Ribbon_Load);
             this.tab1.ResumeLayout(false);
             this.tab1.PerformLayout();
-            this.PLM.ResumeLayout(false);
-            this.PLM.PerformLayout();
+            this.Grp_PLM.ResumeLayout(false);
+            this.Grp_PLM.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -194,7 +230,7 @@ namespace WordAddIn_Project
         #endregion
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup PLM;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup Grp_PLM;
         internal Microsoft.Office.Tools.Ribbon.RibbonMenu menu1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_NewDocument;
         internal Microsoft.Office.Tools.Ribbon.RibbonMenu menu2;
@@ -207,6 +243,10 @@ namespace WordAddIn_Project
         internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_NewRevision;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_SaveDocument;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_CloseDocument;
+        internal Microsoft.Office.Tools.Ribbon.RibbonMenu menu4;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_Register;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_Login;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Btn_LogOut;
     }
 
     partial class ThisRibbonCollection

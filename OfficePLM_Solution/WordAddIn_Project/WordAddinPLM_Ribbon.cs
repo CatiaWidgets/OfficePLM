@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Tools.Ribbon;
-
+using Microsoft.Office.Tools.Word;
 
 namespace WordAddIn_Project
 {
@@ -54,17 +54,19 @@ namespace WordAddIn_Project
         {
 
         }
-        /*
+
         private void DocumentSelectionChange()
         {
-            Document vstoDoc = Globals.Factory.GetVstoObject(this.Application.ActiveDocument);
+            var App = Globals.ThisAddIn.Application;
+
+            Document vstoDoc = Globals.Factory.GetVstoObject(App.ActiveDocument);
             vstoDoc.SelectionChange += new Microsoft.Office.Tools.Word.SelectionEventHandler(ThisDocument_SelectionChange);
         }
 
         void ThisDocument_SelectionChange(object sender, Microsoft.Office.Tools.Word.SelectionEventArgs e)
         {
             System.Windows.Forms.MessageBox.Show("The selection in the document has changed.");
-        }*/
+        }
 
     }
 }
